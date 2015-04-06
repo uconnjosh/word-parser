@@ -18,10 +18,12 @@ export default Ember.Component.extend({
   excerpt: "",
   root: ""
 
-  });
+});
 
   // WordTree = {  
-  
-var WordTree {};
+
+init: function() {
+  alert('howdy ho');
+}
 
   
