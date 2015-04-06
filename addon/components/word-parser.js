@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     var input = this.get('input');
     console.log("input");
     console.log(input);
-    this.init(input);
+    if (input) {this.init(input)};
   },
   rawWords: [],
   wordsObj: {},
