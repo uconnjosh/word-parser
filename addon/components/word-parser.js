@@ -1,8 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
-WordParser = {
   rawWords: [],
   wordsObj: {},
   words: [],
@@ -199,5 +197,4 @@ WordParser = {
   setExcerpt: function(input) {
     this.excerpt = input;
   }
-};
 });
