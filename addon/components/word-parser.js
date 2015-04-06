@@ -8,6 +8,6 @@ export default Ember.Component.extend({
 
     // if (input) {this.init(input)};
   },
-  var parsedText = TextParser.init
+  var parsedText = TextParser.init(this.get('input'));
 // }
 });
