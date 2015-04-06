@@ -5,10 +5,23 @@ export default Ember.Component.extend({
     var input = this.get('input');
     console.log("input");
     console.log(input);
-    if (input) {var parsedText = this.TextParser.init(input)}
-    
-
+    init(input);
     // if (input) {this.init(input)};
-  }
-// }
-});
+  },
+  rawWords: [],
+  wordsObj: {},
+  words: [],
+  finalWords: [],
+  sentences: [],
+  full_sentences: [],
+  root_weight: 0,
+  excerpt: "",
+  root: ""
+
+  });
+
+  // WordTree = {  
+  
+var WordTree {};
+
+  
