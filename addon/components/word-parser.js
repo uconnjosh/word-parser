@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 
     // if (input) {this.init(input)};
   },
-  coconut = WordParser.TextParser.init();
+  coconut: WordParser.TextParser.init();
 
 
   });
