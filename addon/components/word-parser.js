@@ -5,25 +5,15 @@ export default Ember.Component.extend({
     var input = this.get('input');
     console.log("input");
     console.log(input);
-    init(input);
+
     // if (input) {this.init(input)};
   },
-  rawWords: [],
-  wordsObj: {},
-  words: [],
-  finalWords: [],
-  sentences: [],
-  full_sentences: [],
-  root_weight: 0,
-  excerpt: "",
-  root: ""
+  coconut = WordParser.TextParser.init();
 
-});
+
+  });
 
   // WordTree = {  
 
-init: function() {
-  alert('howdy ho');
-}
 
   
