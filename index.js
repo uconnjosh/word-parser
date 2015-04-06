@@ -2,7 +2,10 @@
 'use strict';
 
 module.exports = {
-  name: 'word-parser',
+  name: 'word-parser'
+}
+
+Tree = {
   rawWords: [],
   wordsObj: {},
   words: [],
