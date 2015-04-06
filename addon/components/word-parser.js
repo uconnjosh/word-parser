@@ -5,9 +5,10 @@ export default Ember.Component.extend({
     var input = this.get('input');
     console.log("input");
     console.log(input);
+    if (input) {var parsedText = TextParser.init(input)}
+    
 
     // if (input) {this.init(input)};
-  },
-  var parsedText = TextParser.init(this.get('input'));
+  }
 // }
 });
