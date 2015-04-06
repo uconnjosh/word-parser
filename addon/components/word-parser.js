@@ -5,10 +5,8 @@ export default Ember.Component.extend({
     var input = this.get('input');
     console.log("input");
     console.log(input);
-    this.WordTree.init(input);  
+    this.init(input);
   },
-
-  WordTree = {  
   rawWords: [],
   wordsObj: {},
   words: [],
@@ -18,6 +16,9 @@ export default Ember.Component.extend({
   root_weight: 0,
   excerpt: "",
   root: "",
+
+  // WordTree = {  
+  
 
 
   init: function(input) {
@@ -206,5 +207,5 @@ export default Ember.Component.extend({
   setExcerpt: function(input) {
     this.excerpt = input;
   }
-}
+// }
 });
