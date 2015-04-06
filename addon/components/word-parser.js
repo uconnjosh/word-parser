@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   didInsertElement: function() {
-    var input = this.get('input'),
+    var input = this.get('input');
     alert(input);
     console.log("input");
     console.log(input);  
