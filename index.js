@@ -3,9 +3,9 @@
 
 module.exports = {
   name: 'word-parser'
-}
+},
 
-Tree = {
+TextParser = {
   rawWords: [],
   wordsObj: {},
   words: [],
