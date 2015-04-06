@@ -5,8 +5,9 @@ export default Ember.Component.extend({
     var input = this.get('input');
     console.log("input");
     console.log(input);
-    WordTree.init(input);  
-  }
+    this.WordTree.init(input);  
+  },
+
   WordTree = {  
   rawWords: [],
   wordsObj: {},
