@@ -1,10 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  var input = this.get('input');
-  alert(input);
-  console.log("input");
-  console.log(input);
+  didInsertElement: function() {
+    var input = this.get('input'),
+    alert(input);
+    console.log("input");
+    console.log(input);  
+  }
+  
   // rawWords: [],
   // wordsObj: {},
   // words: [],
