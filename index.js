@@ -2,11 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'word-parser',
-
-  included: function(app) {
-    this._super.included(app);
-  }
+  name: 'word-parser'
 };
 
 // TextParser = {
