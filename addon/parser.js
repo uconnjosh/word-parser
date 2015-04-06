@@ -11,6 +11,8 @@ TextParser = {
 
 
   init: function(input) {
+      alert('ive been initialized!!');
+      alert(input);
       this.parseRoot(input);
       this.setExcerpt(input);
       this.parse_input(input, this.root);
