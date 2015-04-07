@@ -8,7 +8,7 @@ TextParser = {
   root_weight: 0,
   excerpt: "",
   root: "",
-  defaultInput = "",
+  defaultInput: "",
 
 
   init: function() {
