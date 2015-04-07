@@ -25,7 +25,6 @@ export default Ember.Component.extend({
 
   init: function(input) {
       var input = this.get('input') || this.get('defaultInput');
-      alert(input);
       this.parseRoot(input);
       this.setExcerpt(input);
       this.parse_input(input, this.root);
