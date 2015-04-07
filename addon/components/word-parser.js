@@ -51,7 +51,7 @@ export default Ember.Component.extend({
   },
 
   addWord: function(_word, find_root) {
-    _tword = _word.trim().toLowerCase();
+    var _tword = _word.trim().toLowerCase();
     // todo add stop words here!!!!
     if (this.stopWords(_word)) {return};
 
