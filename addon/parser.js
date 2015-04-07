@@ -18,7 +18,6 @@ TextParser = {
       this.parseRoot(input);
       this.setExcerpt(input);
       this.parse_input(input, this.root);
-      this.to_json();
       window.theWords = this.words;
       window.theSentences = this.sentences;
       window.wordsObj = this.wordsObj;
