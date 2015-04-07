@@ -29,7 +29,6 @@ export default Ember.Component.extend({
       this.parseRoot(input);
       this.setExcerpt(input);
       this.parse_input(input, this.root);
-      this.to_json();
       this.uniqueWords();
       return this;
   },
