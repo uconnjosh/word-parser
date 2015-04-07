@@ -31,6 +31,11 @@ export default Ember.Component.extend({
       this.setExcerpt(input);
       this.parse_input(input, this.root);
       this.uniqueWords();
+      $('#word_cloud').jQCloud(this.words, {
+        root: this.root,
+        width: 295,
+        height: 345
+      });
       return this;
   },
   parseRoot: function(input) {
