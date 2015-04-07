@@ -24,9 +24,9 @@ export default Ember.Component.extend({
   // WordTree = { 
 
   init: function(input) {
+      var input = this.get('input') || this.get('defaultInput');
       console.log("hello from inside the component, here is what I have:");
       console.log(input);
-      var input = this.get('input') || this.get('defaultInput');
       this.parseRoot(input);
       this.setExcerpt(input);
       this.parse_input(input, this.root);
