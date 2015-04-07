@@ -35,7 +35,7 @@ export default Ember.Component.extend({
   },
   parseRoot: function(input) {
   var words = input.toLowerCase().split(' ');
-    for (i = 0; i < words.length; i++) {
+    for (var i = 0; i < words.length; i++) {
       this.addWord(words[i], true)
     }
   },
