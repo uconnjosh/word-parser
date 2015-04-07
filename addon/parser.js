@@ -8,9 +8,11 @@ TextParser = {
   root_weight: 0,
   excerpt: "",
   root: "",
+  defaultInput = "",
 
 
-  init: function(input) {
+  init: function() {
+      var input = this.get('input') || this.get('defaultInput');
       alert('ive been initialized!!');
       alert(input);
       this.parseRoot(input);
