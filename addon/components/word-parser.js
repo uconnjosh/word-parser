@@ -31,7 +31,7 @@ export default Ember.Component.extend({
       this.setExcerpt(input);
       this.parse_input(input, this.root);
       this.uniqueWords();
-      window.fuckWords = this.get('words');
+      window.fuckWords = this.words;
       window.fuckRoot = this.root;
       $('#word_cloud').jQCloud(this.words, {
         root: this.root,
